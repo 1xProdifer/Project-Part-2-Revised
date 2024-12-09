@@ -1,0 +1,84 @@
+<!-- MADE BY Adhyan -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Sign in to the ultimate Formula 1 fan experience. Join the race!">
+    <meta name="keywords" content="Formula 1, Sign In, F1 Login, F1 Fan Page">
+    <meta name="author" content="Dax Patel">
+    <title>Formula 1 | Sign In</title>
+    <link rel="stylesheet" href="../css/signin.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">
+                <!-- Image Source: Insert image source URL below -->
+                <img src="/images/f1.png" alt="Formula 1 Logo" width="125" height="65">
+            </div>
+            <h1>Sign In</h1>
+        </header>
+
+        <main>
+            <nav aria-label="Main Navigation">
+                <a href="/index.html" class="back-arrow">
+                    &#8592; Back to Home
+                </a>
+            </nav>
+            
+            <!-- Fan Spotlight Section -->
+            <section class="fan-spotlight" aria-labelledby="fan-spotlight-heading">
+                <h2 id="fan-spotlight-heading">Fan Spotlight</h2>
+                <p>"Formula 1 isn't just a sport; it's a way of life!" – Avid F1 Fan</p>
+            </section>
+            
+            <!-- Sign In Section -->
+            <section class="form-section" aria-labelledby="signin-form-heading">
+                <h2 id="signin-form-heading">Welcome Back!</h2>
+                <p>Please sign in to access exclusive F1 content.</p>
+                <form id="signinForm" action="/submit" method="POST" novalidate>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                    
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" placeholder="Enter your password" required>
+                    
+                    <button type="submit" id="signInBtn">Sign In</button>
+                    
+                    <p class="signup-link">Don't have an account? <a href="/webpages/register.html">Sign up here</a>.</p>
+                </form>
+            </section>
+
+            <!-- Upcoming Races Section -->
+            <section class="upcoming-races" aria-labelledby="upcoming-races-heading">
+                <h2 id="upcoming-races-heading">Upcoming Races</h2>
+                <ul>
+                    <li>Monaco Grand Prix - May 26, 2024</li>
+                    <li>British Grand Prix - July 7, 2024</li>
+                    <li>Italian Grand Prix - September 1, 2024</li>
+                </ul>
+            </section>
+
+            <!-- Newsletter Sign-Up Section -->
+            <section class="newsletter-signup" aria-labelledby="newsletter-heading">
+                <h2 id="newsletter-heading">Stay Updated!</h2>
+                <form id="newsletterForm" action="/newsletter" method="POST">
+                    <label for="newsletterEmail">Email:</label>
+                    <input type="email" id="newsletterEmail" name="email" placeholder="Enter your email" required>
+                    <button type="submit">Subscribe</button>
+                </form>
+            </section>            
+        </main>
+
+        <footer>
+            <p>&copy; 2024 Formula 1 FanPage. All Rights Reserved.</p>
+            <div class="footer-credit">
+                <p>Made by Adhyan</p>
+            </div>
+        </footer>
+    </div>
+
+    <script src="../js/signin.js"></script>
+</body>
+</html>

@@ -1,0 +1,251 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: rgb(221, 215, 215);
+    color: #333;
+    background-image: linear-gradient(to bottom right,brown ,rgb(137, 93, 93));
+}
+header{
+    margin-top: 10px;
+    border-top :10px solid black;
+    border-right :10px solid black;
+    margin:20px;
+    border-top-right-radius: 20px;
+    padding-bottom: 20px;
+    padding-left: 10px;
+}
+
+h1{
+    font-style: italic;
+    font-size: 3em;
+    color: rgb(11, 1, 1);
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: black; 
+}
+
+nav .logo img {
+    display: block;
+    height: auto;
+}
+
+nav .links {
+    display: flex;
+    gap: 60px; 
+}
+
+nav .links a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    padding: 10px 20px;
+    border-radius: 20px;
+    
+}
+
+nav .links a:hover {
+     background-color: brown;
+     
+}
+#teams {
+    padding: 20px;
+    text-align: center;
+}
+
+#teams h1 {
+    margin-bottom: 20px;
+}
+
+.teams-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 20px;
+}
+.team-image{
+    float: left;
+    border-radius: 20px;
+    margin-right: 20px;
+}
+.team-card {
+    position: relative; 
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+    text-align: center; 
+    
+
+}
+h2{
+    color: white;
+
+    margin-bottom: 20px;
+}
+
+.drivers{
+    margin-top: 7%;
+}
+
+.team-card h2 {
+    font-size: 22px;
+    color: black;
+    margin-bottom: 10px;
+}
+
+.team-card p {
+    margin: 5px 0;
+    overflow: auto;
+}
+.standings-section {
+    padding: 20px;
+    text-align: center;
+}
+
+.standings-table {
+    width: 100%;
+    max-width: 700px;
+    margin: 0 auto;
+    border-collapse: collapse;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.standings-table th, .standings-table td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 2px solid white;
+}
+
+.standings-table tr:nth-child(even) {
+    background-color: white;
+    font-size: 1.1em;
+    color: black;
+}
+.standings-table tbody tr:nth-child(odd){
+    background-color: rgb(168, 161, 160);
+    font-size: 1.1em;
+    color: black;
+}
+thead{
+    background-color: black;
+    color:white
+}
+
+footer {
+    background-color: #000;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+}
+
+.footer-section {
+    max-width: 300px;
+    margin: 10px;
+}
+
+.footer-section h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.footer-section p {
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+@media (max-width: 820px) {
+    nav .links {
+        gap: 20px; 
+        flex-wrap: wrap; 
+    }
+
+    nav .links a {
+        font-size: 16px; 
+        padding: 8px 15px; 
+    }
+
+    header h1 {
+        font-size: 2em; 
+    }
+
+    .teams-container {
+        grid-template-columns: 1fr; 
+        gap: 15px; 
+    }
+
+    .team-card {
+        padding: 15px; 
+    }
+
+    .standings-table th, .standings-table td {
+        font-size: 0.9em; 
+    }
+
+    footer {
+        font-size: 14px;
+    }
+
+    .footer-container {
+        flex-direction: column; 
+        align-items: center;
+    }
+}
+
+@media (max-width: 480px) {
+    nav .links {
+        flex-direction: column; 
+        align-items: center;
+    }
+
+    nav .links a {
+        font-size: 14px; 
+        padding: 5px 10px; 
+    }
+
+    header h1 {
+        font-size: 1.8em; 
+    }
+
+    .team-card {
+        padding: 10px; 
+        text-align: left; 
+    }
+
+    .team-card img {
+        float: none; 
+        display: block;
+        margin: 0 auto 10px;
+    }
+
+    .standings-table th, .standings-table td {
+        font-size: 0.8em; 
+    }
+
+    .footer-container {
+        font-size: 12px; 
+    }
+
+    footer {
+        padding: 15px; 
+    }
+}
+

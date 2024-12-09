@@ -1,0 +1,258 @@
+/* Global Styles */
+body {
+    font-family: 'Lucida Sans', Arial, sans-serif;
+    margin: 0;
+    background-color: black;
+    color: white;
+    background-image: linear-gradient(to bottom right, black, darkred);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    width: 90%;
+    max-width: 600px;
+    text-align: center;
+}
+
+header {
+    margin-bottom: 20px;
+}
+
+header .logo img {
+    display: block;
+    margin: 0 auto;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    font-style: italic;
+    color: red;
+    margin: 10px 0;
+}
+
+/* Form Styles */
+form {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.8);
+}
+
+form h2 {
+    color: red;
+    font-size: 1.8rem;
+}
+
+form p {
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+input {
+    width: 90%;
+    padding: 10px;
+    margin-top: 5px;
+    border: none;
+    border-radius: 5px;
+}
+
+button {
+    width: 95%;
+    padding: 10px;
+    margin-top: 15px;
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background-color: darkred;
+    transform: scale(1.05);
+}
+
+.signup-link a {
+    color: red;
+    text-decoration: none;
+}
+
+.signup-link a:hover {
+    text-decoration: underline;
+}
+
+/* Footer */
+footer {
+    margin-top: 20px;
+    font-size: 0.8rem;
+    color: lightgray;
+}
+
+.footer-credit {
+    text-align: center;
+    margin-top: 20px;
+    font-family: 'Arial', sans-serif;
+    font-size: 14px;
+    font-style: italic;
+    color: #fff;
+    letter-spacing: 1px;
+    background-color: rgba(0, 0, 0, 0.6); 
+    padding: 5px 0;
+    border-radius: 10px;
+    width: 100%;
+}
+
+.footer-credit p {
+    margin: 0;
+}
+
+
+.back-arrow {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    font-size: 20px;
+    color: #fff;
+    text-decoration: none;
+    font-family: 'Arial', sans-serif;
+    font-weight: bold;
+    background: rgba(0, 0, 0, 0.8); 
+    padding: 10px 15px;
+    border-radius: 10px;
+    transition: all 0.3s ease-in-out;
+}
+
+.back-arrow:hover {
+    background: #ff1a1a; 
+    transform: scale(1.1);
+    color: #000;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.fan-spotlight, .upcoming-races, .newsletter-signup {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px 0;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.8);
+    color: white;
+    text-align: center;
+}
+
+.fan-spotlight h2, .upcoming-races h2, .newsletter-signup h2 {
+    color: red;
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+
+.fan-spotlight, 
+.upcoming-races, 
+.newsletter-signup {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    padding: 50pxpx;
+    margin: 50px 0; 
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.8);
+    color: white;
+    text-align: center;
+}
+
+.upcoming-races ul {
+    list-style: none;
+    padding: 0;
+    color: white;
+}
+
+.upcoming-races li {
+    margin: 5px 0;
+}
+
+.newsletter-signup input {
+    width: 80%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: none;
+}
+
+.newsletter-signup button {
+    padding: 10px 20px;
+    background-color: red;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.newsletter-signup button:hover {
+    background-color: darkred;
+}
+
+
+/* --- Desktop View (1920px) --- */
+@media (min-width: 1920px) {
+    body {
+        font-size: 18px;  /* Larger font size for readability */
+    }
+
+    .form-container {
+        max-width: 600px;  /* Center the form container */
+    }
+
+    .form-container input[type="text"],
+    .form-container input[type="password"],
+    .form-container input[type="submit"] {
+        padding: 15px;
+        font-size: 18px;
+    }
+
+    .form-container input[type="submit"]:hover {
+        background-color: #e60000;  /* Darker red for the submit button */
+    }
+
+    .back-arrow {
+        font-size: 22px;  /* Larger arrow text on desktop */
+        padding: 15px 20px;
+    }
+}
+
+/* --- Mobile View (768px) --- */
+@media (max-width: 768px) {
+    body {
+        font-size: 16px;  /* Adjust font size for smaller screens */
+    }
+
+    .form-container {
+        width: 90%;  /* Form will take up 90% of the screen width on mobile */
+        padding: 20px;
+    }
+
+    .form-container input[type="text"],
+    .form-container input[type="password"],
+    .form-container input[type="submit"] {
+        padding: 12px;  /* Adjust padding to suit smaller screen */
+        font-size: 16px;
+    }
+
+    .form-container input[type="submit"]:hover {
+        background-color: #ff1a1a;  /* Lighter red hover effect */
+    }
+
+    .back-arrow {
+        font-size: 18px;  /* Smaller font size for mobile */
+        padding: 10px 15px;
+    }
+}
